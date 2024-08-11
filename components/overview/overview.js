@@ -1,31 +1,27 @@
-import { useEffect, useRef } from 'react';
+import { useRef,useState } from 'react';
 import Image from 'next/image';
 import styles from './styles.module.css';
 import Script from 'next/script';
+import SignUpModal from '../SignUpModal/SignUpModal.js'; 
 
 export default function Overview() {
   const itypedRef = useRef(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  useEffect(() => {
-    // Check if ityped is loaded
-    if (typeof window !== 'undefined' && typeof ityped !== 'undefined') {
-      // Ensure the element is available before initializing ityped
-      if (itypedRef.current) {
-        ityped.init(itypedRef.current, {
-          showCursor: true,
-          strings: ['Reliable.', 'Efficient.', 'User-friendly.'],
-          typeSpeed: 100, // Speed at which the text appears
-          backSpeed: 50,  // Speed at which the text disappears (if any)
-          backDelay: 500, // Delay before the text starts disappearing
-          startDelay: 500 // Delay before the typing starts
-        });
-      } else {
-        console.error('The .ityped element is not available.');
-      }
-    } else {
-      console.error('ityped library is not loaded.');
+  const openModal = () => {
+    setIsModalOpen(true); 
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const scrollToHeader = () => {
+    const headerElement = document.getElementById('header');
+    if (headerElement) {
+      headerElement.scrollIntoView({ behavior: 'smooth' });
     }
-  }, []);
+  };
 
   return (
     <div className={styles.container}>
@@ -103,7 +99,7 @@ export default function Overview() {
       <footer className={styles.footer}>
         <h1>Get started with chatMate today, and never look back</h1>
         <h2>Sign up for a 14-day free trial to get on board with us.</h2>
-        <button><p>Start Now!</p></button>
+        <button onClick={scrollToHeader}><p>Start Now!</p></button>
         <p className={styles.overviewParagraph}>Access to full product. No credit card required.</p>
       </footer>
 

@@ -1,7 +1,19 @@
+"use client"
 import React from 'react';
 import styles from './styles.module.css';
+import SignUpModal from '../SignUpModal/SignUpModal';
+import { useState } from 'react';
 
 const HeroSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true); 
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <div className={styles.heroSectionWrapper}>
       <section className={styles.heroSection}>
@@ -11,7 +23,8 @@ const HeroSection = () => {
             <p className="text-2xl mb-8">
               Offer high-quality customer experiences that can scale with your business over time with Freshchat.
             </p>
-            <button className="bg-blue-500 text-white py-3 px-6 rounded text-xl mb-4">Start Free Trial</button>
+            <button className="bg-blue-500 text-white py-3 px-6 rounded text-xl mb-4" onClick={openModal}>Start Free Trial</button>{isModalOpen && <SignUpModal closeModal={closeModal} />} 
+            {isModalOpen && <div className={styles.overlay}></div>}
             <div className={styles.badgesContainer}>
               <img className={styles.badge} src="/firstBadge.png" alt="the first badge" />
               <img className={styles.badge} src="/secondBadge.png" alt="the second badge" />

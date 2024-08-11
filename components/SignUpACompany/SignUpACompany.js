@@ -33,7 +33,7 @@ const CompleteSignUp = ({ email, handleBack, closeModal }) => {
           className="border border-gray-300 p-2 mb-1 w-full"
           required
         />
-        <p className="text-red-500 text-sm mb-4">Please tell us where you work</p>
+        <p className="text-red-500 text-sm mb-4">Please tell us where you work(Type 'None' if personal account)</p>
 
         <input
           type="text"
