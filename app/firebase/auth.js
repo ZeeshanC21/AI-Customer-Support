@@ -3,7 +3,11 @@
 
 import { onAuthStateChanged, signOut, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { createContext, useContext, useState, useEffect } from 'react';
+<<<<<<< HEAD
 import { auth } from './firebasePage'; // Import the correct auth object from firebasePage
+=======
+import { auth } from './page'; // Import the correct auth object
+>>>>>>> 7343c17dc78c4a5e2184c1f673562bfb5c888656
 
 export const AuthContext = createContext({
   authUser: null,
