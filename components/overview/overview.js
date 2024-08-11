@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from './overview.module.css'; // Adjust the path to your CSS module
+import styles from './sec1.css'; // Adjust the path to your CSS module
 
 export default function Overview() {
   return (
