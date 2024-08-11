@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './styles.module.css'; 
 
-const CompleteSignUp = ({ email, handleBack }) => {
+const CompleteSignUp = ({ email, handleBack, closeModal }) => {
   const [companyName, setCompanyName] = useState('');
   const [phoneNo, setPhoneNo] = useState('');
 
@@ -14,7 +14,7 @@ const CompleteSignUp = ({ email, handleBack }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 z-20">
       <div className="bg-white p-8 rounded-lg w-96 relative flex flex-col items-center">
-        <h2 className="text-xl font-bold mb-4">Sign up for a 14 day free trial</h2>
+        <h2 className="text-xl font-bold mb-4">Sign up for a 14-day free trial</h2>
 
         <p className="text-lg mb-4">{email}</p>
 
@@ -43,7 +43,7 @@ const CompleteSignUp = ({ email, handleBack }) => {
           className="border border-gray-300 p-2 mb-1 w-full"
           required
         />
-        <p className="text-red-500 text-sm mb-4">Product Name</p>
+        <p className="text-red-500 text-sm mb-4">Phone Number</p>
 
         <button
           className="bg-black text-white w-full py-2 mb-4 rounded"
@@ -58,6 +58,14 @@ const CompleteSignUp = ({ email, handleBack }) => {
         <p className="text-sm text-gray-500 mb-4 text-center">
           Your data will be located in Middle East & Africa <span className="text-blue-500">Change</span>
         </p>
+
+        {/* Close button */}
+        <button
+          className="absolute bottom-4 text-blue-500"
+          onClick={closeModal}
+        >
+          Close
+        </button>
       </div>
     </div>
   );

@@ -16,15 +16,15 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white">
-      <div className={`flex justify-start items-center p-4 ${styles.nav}`}>
+    <header className={styles.header}>
+      <div className={styles.nav}>
         <h1 className={styles.h1}>chatmate</h1>
         <button className={styles.button} onClick={openModal}>
           FREE TRIAL
         </button>
       </div>
       {isModalOpen && <SignUpModal closeModal={closeModal} />} 
-      {isModalOpen && <div className="fixed inset-0 bg-black opacity-50 z-10"></div>} 
+      {isModalOpen && <div className={styles.overlay}></div>} 
     </header>
   );
 };

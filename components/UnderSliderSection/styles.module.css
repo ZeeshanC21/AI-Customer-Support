@@ -1,0 +1,163 @@
+.section {
+  padding-top: 4rem; /* py-16 */
+  padding-bottom: 4rem; /* py-16 */
+  background-color: #f3f4f6; /* bg-gray-100 */
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem; /* px-6 */
+  padding-right: 1.5rem; /* px-6 */
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.mb12 {
+  margin-bottom: 3rem; /* mb-12 */
+}
+
+.text3xl {
+  font-size: 1.875rem; /* text-3xl */
+}
+
+.fontBold {
+  font-weight: 700; /* font-bold */
+}
+
+.mb4 {
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.textLg {
+  font-size: 1.125rem; /* text-lg */
+}
+
+.textGray700 {
+  color: #4a5568; /* text-gray-700 */
+}
+
+.flex {
+  display: flex;
+}
+
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.gap8 {
+  gap: 2rem; /* gap-8 */
+}
+
+.w40 {
+  width: 10rem; /* w-40 */
+}
+
+.h40 {
+  height: 10rem; /* h-40 */
+}
+
+.itemsCenter {
+  align-items: center;
+}
+
+.mt1 {
+  margin-top: 0.25rem; /* mt-1 */
+}
+
+.wFull {
+  width: 100%; /* w-full */
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+    padding-top: 4rem; /* py-16 */
+    padding-bottom: 4rem; /* py-16 */
+    background-color: #f3f4f6; /* bg-gray-100 */
+  }
+  
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem; /* px-6 */
+    padding-right: 1.5rem; /* px-6 */
+  }
+  
+  .textCenter {
+    text-align: center;
+  }
+  
+  .mb12 {
+    margin-bottom: 3rem; /* mb-12 */
+  }
+  
+  .text3xl {
+    font-size: 1.875rem; /* text-3xl */
+  }
+  
+  .fontBold {
+    font-weight: 700; /* font-bold */
+  }
+  
+  .mb4 {
+    margin-bottom: 1rem; /* mb-4 */
+  }
+  
+  .textLg {
+    font-size: 1.125rem; /* text-lg */
+  }
+  
+  .textGray700 {
+    color: #4a5568; /* text-gray-700 */
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flexWrap {
+    flex-wrap: wrap;
+  }
+  
+  .justifyCenter {
+    justify-content: center;
+  }
+  
+  .gap8 {
+    gap: 2rem; /* gap-8 */
+  }
+  
+  .w40 {
+    width: 10rem; /* w-40 */
+  }
+  
+  .h40 {
+    height: 10rem; /* h-40 */
+  }
+  
+  .itemsCenter {
+    align-items: center;
+  }
+  
+  .mt1 {
+    margin-top: 0.25rem; /* mt-1 */
+  }
+  
+  .wFull {
+    width: 100%; /* w-full */
+  }
+  
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
