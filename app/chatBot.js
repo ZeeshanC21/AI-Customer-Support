@@ -83,8 +83,8 @@ export default function Home() {
 
   return (
     <Box
-      width="100vw"
-      height="100vh"
+      width="500px"
+      height="500px"
       display="flex"
       flexDirection="column"
       justifyContent="center"
@@ -92,11 +92,15 @@ export default function Home() {
     >
       <Stack
         direction={'column'}
-        width="500px"
-        height="700px"
+        width="100%"   
+        height="100%"  
+        maxWidth="400px"  
+        maxHeight="400px"  
         border="1px solid black"
         p={2}
         spacing={3}
+        justifyContent="center"
+        alignItems="center"  
       >
         <Stack
           direction={'column'}

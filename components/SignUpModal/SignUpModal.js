@@ -1,4 +1,3 @@
-// components/SignUpModal/SignUpModal.js
 import React, { useState } from 'react';
 import { GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../app/firebase/firebasePage'; // Updated import path
@@ -48,7 +47,7 @@ const SignUpModal = ({ closeModal }) => {
   return (
     <>
       {isStepTwo ? (
-        <CompleteSignUp email={email} handleBack={handleBackToStepOne} />
+        <CompleteSignUp email={email} handleBack={handleBackToStepOne} closeModal={closeModal} />
       ) : (
         <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 z-20">
           <div className="bg-white p-8 rounded-lg w-96 relative flex flex-col items-center">
